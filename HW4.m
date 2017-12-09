@@ -1,7 +1,7 @@
 %HW4
 %% 
 % Problem 1. 
-
+filename = 'rand8bit.tif'
 % 1. Write a function to generate an 8-bit image of size 1024x1024 with a random value 
 % of the intensity in each pixel. Call your image rand8bit.tif. 
 
@@ -13,8 +13,19 @@
 % from (2) and returns a vector of mean intensities of each circle (hint: use regionprops).
 %
 % 4. Plot the mean and standard deviation of the values in your output
-% vector as a function of circle size. Explain your results. 
-
+% vector as a function of circle size. Explain your results.
+x = [];
+y = [];
+z = []
+for n = 1:300;
+    x(n) = mean(double(getmeanintensity(filename,n)));
+    y(n) = std(double(getmeanintensity(filename,n)));
+    z(n) = n
+end
+plot(z,x);
+hold on;
+plot(z,y)
+    
 %%
 
 %Problem 2. Here is some data showing an NFKB reporter in ovarian cancer
