@@ -1,5 +1,23 @@
 %HW4
 %% 
+
+%GB comments
+1a 90 need to provide code that implements the function. 
+1b 90 need to provide code that implements the function.
+1c 90 need to provide code that implements the  function.
+1d 40 plots don’t have labels and there is no explanation of the results. 
+2a 0 no work
+2b 0 no work
+3a 0 no work 
+3b 0 no work
+3c 0 no work
+3d 0 no work
+3e 0 no work
+3f 0 no work
+4a 0 no work
+4b 0 no work
+overall: 22 
+
 % Problem 1. 
 filename = 'rand8bit.tif'
 % 1. Write a function to generate an 8-bit image of size 1024x1024 with a random value 
